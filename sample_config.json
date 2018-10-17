@@ -1,0 +1,45 @@
+{
+    "Title": "Report Title Here",
+    "ServerInstance": "10.2.16.11",
+    "Database": "IODC_Central_FA",
+    "Subject": "Sample Report",
+    "SMTPServer": "SMTP_SERVER_HERE",
+    "From": "ReportSender@email.com",
+    "deeplink": null,
+    "interactive": true,
+    "ReportHeader": "<style>BODY { background-color: #FFFFFF; outline: 1px; font-family: 'segoe ui', helvetica; font-weight: 600; margin: 10px 20px 10px 20px; } TABLE { text-align: center; border-width: 2px; border-style: none; border-collapse: collapse; outline: 1px; border-color: #0161b5; border-spacing: 1px; width: 100%; } TH { border-collapse: separate; border: 2px solid #FFFFFF; border-bottom: 5px solid limegreen; padding: 5px 5px; font-size: 14pt; color: #ffffff; background-color: #0161b5; margin-bottom: 10px; } TD { padding: 2px 2px; font-size: 10pt; color: #ffffff; border-collapse: separate; border: 2px solid #FFFFFF; border-spacing: 5px; } .colspan { font-size: 18pt; color: #ffffff; } .even { background-color: #038ce8; } .odd { background-color: #0161b5; } table.rowsreturned { padding-left: 1%; color: white; width: 100%; border-collapse: collapse; margin-bottom: 10px; } tr.rowsreturned { background-color: #0161b5; text-align: left; box-shadow: 0 10px 5px -5px darkgray; } td.rowsreturned { font-family: 'segoe ui', helvetica; font-size: 14pt; padding: 5px; font-weight: bold; border: none; } .descrip { font-size: 12pt; font-weight: bold; color: gray; border-color: #FFFFFF; border-collapse: collapse; padding-left: 1%; margin: 2px 0px 2px 0px; text-align: left; padding-left: 2%; } .reportname { font-size: 26pt; font-weight: bold; color: #fc7317; border-color: white; border-collapse: collapse; padding-left: 1%; margin: 2px 0px 2px 0px; text-align: left; padding-left: 2%; } table.reportname { width: 100%; text-align: left; } p { margin: 10px 0px 0px 0px; } .error { background-color: #fc7317; } table.documenttitle { font-family: 'segoe ui', helvetica; font-size: 22pt; font-weight: 900; color: #038ce8; font-weight: bold; width: 100%; border-collapse: collapse; margin-bottom: 10px } tr.documenttitle { height: 50px; background-color: #4D4D4D; text-align: left; box-shadow: 0 10px 5px -5px darkgray; } td.documenttitle { font-size: 28pt; font-weight: bold; padding: 10px; color: #038ce8; border: none; } .resultsets { font-size: 14pt; color: gray; } th.colspan { border-bottom: none; } [data-toggle='toggle'] { display: none; } table.reporttable tr:hover { background-color: #4D4D4D; transition: background-color 500ms linear; } table.reporttable tr:hover td { color: limegreen; transition: color 500ms linear; } input[type=checkbox] { border: none; position: absolute; left: -9999px; } label { display: inline-block; border: 1px solid #ccc; padding: 5px 5px; margin-bottom: 10px; color: gray; } label:hover { background-color: #4D4D4D; color: white; } input[type=checkbox]:checked+table { opacity: 0; height: 0; display: none; } input[type=checkbox]:checked+label { background-color: black; } #table1 { opacity: 1; transition: opacity .3s linear, max-height 1.5s linear; } table.reporttable tr:hover td.error { color: limegreen; transition: color 250ms linear; font-weight: bold; background-color: #4D4D4D; border: 5px solid red; border-collapse: separate; } table.jsHideTable { opacity: 0; height: 0; display: none; } button { display: none; border: 1px solid #ccc; padding: 5px 5px; color: white; background-color: #038ce8; } button.unhide { display: inline-block; } </style>",
+    "JavaScript": "function jsHide(id, toggleClass) { var element = document.getElementById(id); if (!element.classList.contains(toggleClass)) { console.log('applying class: ' + toggleClass + ' to ' + id); element.classList.add(toggleClass) } else { console.log('removing class: ' + toggleClass + ' from ' + id); element.classList.remove(toggleClass) } }; function toggleText (input){ console.log(input.id); var element = document.querySelectorAll('#' + input.id); if (element[0].innerText == 'Hide Rows'){ element[0].innerText = 'Unhide Rows' } else { element[0].innerText = 'Hide Rows' } }; function unhideButtons() { let buttons = document.querySelectorAll('button'); Array.from(buttons).map(element => element.classList.toggle('unhide')); }; unhideButtons();",
+    "Recipients": [
+        "matt.hamende@gmail.com"
+    ],
+    "RowPreview": 10,
+    "Reports": [
+        {
+            "ReportName": "Report Sample 1",
+            "QueryPath": "TESTQUERY1.sql",
+            "Attachments": true,
+            "XLTemplate": "test",
+            "Description": "Summary of Report",
+            "Header": null,
+            "ReplaceTags": null
+        },
+        {
+            "ReportName": "Report Sample 2",
+            "QueryPath": "TESTQUERY2.sql",
+            "Attachments": true,
+            "XLTemplate": "test",
+            "Description": "Summary of Report",
+            "Header": null,
+            "ReplaceTags": null
+        },
+        {
+            "ReportName": "Report Sample 3",
+            "QueryPath": "TESTQUERY3.sql",
+            "Attachments": true,
+            "XLTemplate": "test",
+            "Description": "Summary of Report",
+            "Header": null,
+            "ReplaceTags": null
+        }
+    ]
+}

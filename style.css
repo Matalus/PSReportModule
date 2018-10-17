@@ -1,0 +1,86 @@
+BODY {
+    background-color: #CBC8CE;
+    outline: 1px;
+    font-family: 'segoe ui', helvetica;
+    margin: 10px 20px 10px 20px;
+}
+TABLE {
+    text-align: center;
+    border-width: 2px;
+    border-style: none;
+    border-collapse: collapse;
+    outline: 1px;
+    border-color: #414042;
+    border-spacing: 1px;
+    width: 100%;
+}
+TH {
+    border-collapse: separate;
+    border: 2px solid #CBC8CE;
+    padding: 5px 10px;
+    font-size: 12pt;
+    color: #ffffff;
+    background-color: #857C8E;
+    border-spacing: 2px;
+}
+TD {
+    border-width: 2px;
+    padding: 1px 10px;
+    font-size: 10pt;
+    color: #ffffff;
+    border-collapse: separate;
+    border: 2px solid #CBC8CE;
+}
+.colspan {
+    font-size: 18pt;
+    color: #ffffff;
+}
+.even {
+    background-color: #584C58;
+}
+.odd {
+    background-color: #7E6D7F;
+}
+.rowsreturned {
+    font-size: 14pt;
+    padding-left: 1%;
+    font-weight: bold;
+    color: white;
+    background-color: firebrick;
+    width: 100%;
+    text-align: left;
+    margin: 2px 0px 2px 0px;
+}
+.descrip {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #414042;
+    border-color: #CBC8CE;
+    border-collapse: collapse;
+    padding-left: 1%;
+    margin: 2px 0px 2px 0px;
+    text-align: left;
+    padding-left: 2%;
+}
+.reportname {
+    font-size: 26pt;
+    font-weight: bold;
+    color: firebrick;
+    background-color: #857C8E;
+    border-color: #CBC8CE;
+    border-collapse: collapse;
+    padding-left: 1%;
+    margin: 2px 0px 2px 0px;
+    text-align: left;
+    padding-left: 2%;
+}
+p {
+    margin: 10px 0px 0px 0px;
+}
+.error {
+    background-color: firebrick;
+}
+colgroup.reports {
+    border-left: 5px solid limegreen;
+    border-right: 5px solid limegreen;
+}
